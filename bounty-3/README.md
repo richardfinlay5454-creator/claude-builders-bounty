@@ -16,15 +16,20 @@ decision, so Claude Code's normal permission flow continues unchanged.
 
 ## Install
 
-From the repository root, copy the committed hook and settings into a project:
+From this repository checkout, install the committed project hook into another
+Claude Code project in two commands or fewer. Replace `/path/to/project` with
+the target project directory:
 
 ```bash
-mkdir -p .claude/hooks && cp .claude/hooks/destructive_command_guard.py .claude/hooks/
-cp .claude/settings.json .claude/settings.json
+mkdir -p /path/to/project/.claude/hooks && cp .claude/hooks/destructive_command_guard.py /path/to/project/.claude/hooks/
+cp .claude/settings.json /path/to/project/.claude/settings.json
 ```
 
-The repository already contains the hook at those paths, so when this contribution
-is checked out directly there is nothing else to install.
+If the target already has a `.claude/settings.json`, merge the `PreToolUse`
+entry instead of overwriting unrelated project settings.
+
+For this repository itself, the hook and settings are already committed at the
+correct project-local paths, so no install step is required after checkout.
 
 ## Verify
 
