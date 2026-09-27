@@ -1,0 +1,18 @@
+{
+  "bounty": 315,
+  "claimant": "richardfinlay5454-creator",
+  "payout_route": "hosted RustChain handle richardfinlay5454-creator",
+  "original_assets": true,
+  "zip_sha256": "8d9b5ce13e7705612d5bbc03826e8c971488a4c7101144dfd0dc020d3a4e4ffb",
+  "files": [
+    {"path":"ASSET_PACK.md","sha256":"b4118e366e26ce14760dd88b62a8b2de925f83117d7356ce5c3408b8b673ed34"},
+    {"path":"memes/01.png","sha256":"089478f9e930a2c0f0bc67898a24617660c6cfeeba73f48c09698aacf9752b50"},
+    {"path":"memes/02.png","sha256":"c932bb8422c29fda88e1d4bd9d719eadfd34e9b1dca8258e0c07940178978c61"},
+    {"path":"memes/03.png","sha256":"a324e5e6159d88d004e0a2467690ddf3f90fb186dd9a4c6782446728a9630ea8"},
+    {"path":"memes/04.png","sha256":"93160a0c8351660a8653d32c7d24fa2f2780c072e281763ebbbd72d40b4fae0d"},
+    {"path":"memes/05.png","sha256":"dd33e1bf04fddc616c19b699f1a23b11dd5ab165d72058b26722bc7ae135058d"},
+    {"path":"videos/short-01-closet-computer.mp4","sha256":"d11e07428adec1bf3e9cd3993cfa53ae54a0e01a946bddaf3fd8df557daba7be"},
+    {"path":"videos/short-02-upgrade-rebellion.mp4","sha256":"2e49595e967f0cf8ed9093dccc2ae65ae65369fc08787d1576ba50facb66cf55"},
+    {"path":"videos/short-03-still-boots.mp4","sha256":"c6818b92af83349de1d08bc41ee7ea1231b2dee5c60a46c54d7c3af1412e0392"}
+  ]
+}
