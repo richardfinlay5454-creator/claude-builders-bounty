@@ -1,0 +1,18 @@
+{
+  "claimant": "richardfinlay5454-creator",
+  "payout_route": "hosted RustChain handle richardfinlay5454-creator",
+  "ai_assistance": "GPT-5.6 Sol",
+  "source_pin": "Scottcjn/Rustchain@a4d39e9604897caf30693b05a79181018521811f",
+  "submissions": {
+    "12442": {
+      "body_characters": 2824,
+      "full_file_characters": 3445,
+      "sha256": "c5e299b7a8f6a64e9b7dde8d8f630eceb693d9d5d2ba787cc9891e4775fca7fc"
+    },
+    "12444": {
+      "body_characters": 3000,
+      "full_file_characters": 3696,
+      "sha256": "10f1168cfcdca958ae4026c9842431938c505587c57aa13ea9d930004aa3f23f"
+    }
+  }
+}
