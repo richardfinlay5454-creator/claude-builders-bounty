@@ -1,0 +1,35 @@
+name: OmniPilot encrypted relay
+
+on:
+  push:
+    branches:
+      - omnipilot-control
+    paths:
+      - relay/request.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: omnipilot-relay
+  cancel-in-progress: false
+
+jobs:
+  relay:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: omnipilot-control
+      - name: Proxy encrypted OmniPilot packet
+        run: python3 relay/bridge.py relay/request.json relay/response.json
+      - name: Commit encrypted response
+        run: |
+          git config user.name "omnipilot-relay[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add relay/response.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "OmniPilot relay response [skip ci]"
+          git push origin HEAD:omnipilot-control
